@@ -19,9 +19,7 @@ type TestStore = {
 
 const useGame = createStore<TestStore>((set, get) => ({
     cardInfomation: {
-      player: [{
-        index:0,
-      }],
+      player: [],
       setPlayer: (value) => {
         console.log("setPlayer");
         set((state) => ({
