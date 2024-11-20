@@ -1,4 +1,4 @@
-import { create } from "zustand"
+import { create, createStore } from "zustand"
 import GameManager from "../manager"
 
 type TestType = {
@@ -17,7 +17,7 @@ type TestStore = {
     
 }
 
-const useGame = create<TestStore>((set, get) => ({
+const useGame = createStore<TestStore>((set, get) => ({
     cardInfomation: {
       player: [{
         index:0,

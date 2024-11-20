@@ -9,12 +9,11 @@ import GameManager from './manager'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
-          <button onClick={GameManager.clickEvent}/>
+          <button onClick={GameManager.clickEvent}>스테이트 바꾸기</button>
+          <button onClick={GameManager.setArray}>배열 넣기</button>
       </div>
     </>
   )
